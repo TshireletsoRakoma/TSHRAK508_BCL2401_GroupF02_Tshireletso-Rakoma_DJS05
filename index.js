@@ -10,3 +10,6 @@ const store = new Store(tallyReducer);
 store.subscribe(() => {
     console.log(store.getState().count); // Log only the count property
 });
+
+// SCENARIO 1: Initial State Verification
+console.log('Initial State:', store.getState().count); // Logs the initial count: 0
