@@ -20,6 +20,7 @@
         }
     }
     
+
     // Define the reducer function which handles actions and updates the state
 export function tallyReducer(state = { count: 0 }, action) {
     switch (action.type) {
