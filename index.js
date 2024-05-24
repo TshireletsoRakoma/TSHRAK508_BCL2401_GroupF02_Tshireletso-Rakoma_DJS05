@@ -19,3 +19,11 @@ store.dispatch(createAddAction()); // Dispatch an ADD action
 console.log('After ADD 1:', store.getState().count); // Logs the count after first ADD: 1
 store.dispatch(createAddAction()); // Dispatch another ADD action
 console.log('After ADD 2:', store.getState().count); // Logs the count after second ADD: 2
+
+// SCENARIO 3: Decrementing the Counter
+store.dispatch(createSubtractAction()); // Dispatch a SUBTRACT action
+console.log('After SUBTRACT:', store.getState().count); // Logs the count after SUBTRACT: 1
+
+// SCENARIO 4: Resetting the Counter
+store.dispatch(createResetAction()); // Dispatch a RESET action
+console.log('After RESET:', store.getState().count); // Logs the count after RESET: 0
