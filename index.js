@@ -1,7 +1,7 @@
 // index.js
 
-import { Store, tallyReducer } from './store2.js';
-import { createAddAction, createSubtractAction, createResetAction } from './ACTIONS2.js';
+import { Store, tallyReducer } from './files/store2.js';
+import { createAddAction, createSubtractAction, createResetAction } from './files/ACTIONS2.js';
 
 // Create a new store using the tallyReducer
 const store = new Store(tallyReducer);
