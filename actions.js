@@ -10,3 +10,7 @@ export function createSubtractAction() {
     return { type: 'SUBTRACT' };
 }
 
+// Factory function to create a RESET action
+export function createResetAction() {
+    return { type: 'RESET' };
+}
