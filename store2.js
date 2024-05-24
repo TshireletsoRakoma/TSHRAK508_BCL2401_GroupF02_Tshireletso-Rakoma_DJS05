@@ -19,3 +19,17 @@
             };
         }
     }
+    
+    // Define the reducer function which handles actions and updates the state
+export function tallyReducer(state = { count: 0 }, action) {
+    switch (action.type) {
+        case 'ADD':
+            return { count: state.count + 1 }; // Increment count
+        case 'SUBTRACT':
+            return { count: state.count - 1 }; // Decrement count
+        case 'RESET':
+            return { count: 0 }; // Reset count to 0
+        default:
+            return state; // Return the current state for unknown actions
+    }
+}
